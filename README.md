@@ -2,7 +2,7 @@
 
 <h2>Repositorio:</h2>
 
-Este es el link del [repositorio](https://github.com/albabernal03/Alternativa-ejercicios-)
+Este es el link del [repositorio](https://github.com/Barroso03/examennaranjas.git)
 ***
 <h2>¿De qué trata esta tarea?</h2>
 
@@ -15,7 +15,7 @@ En este examen hemos cogido un dataset con una variable llamada naranjas que ten
 ## Código:<a name="id1"></a>
 
 
-**SOLUCION**
+
 ```
 import pandas as pd
 import numpy as np
