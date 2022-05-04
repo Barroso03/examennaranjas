@@ -125,18 +125,23 @@ grafico_pastel(dataframe_naranjas())
 
 ## Explicación código:
 **Pasos:**
+
 **1.** Importamos las librerías necesarias:
- -Pandas: esta librería sirve para crear el dataframe y leerlo.
- -Numpy: esta librería sirve para hacer calculos matemáticos como la media o la varianza.
- -Matplotlib: esta libreria sirve para hacer diadramas en dos dimensiones como diagramas de barras.
- -Seaborn:  esta libreria sirve para hacer diagrama mas complejos que los de matplotlib.
+ 
+       -Pandas: esta librería sirve para crear el dataframe y leerlo.
+       -Numpy: esta librería sirve para hacer calculos matemáticos como la media o la varianza.
+       -Matplotlib: esta libreria sirve para hacer diadramas en dos dimensiones como diagramas de barras.
+       -Seaborn:  esta libreria sirve para hacer diagrama mas complejos que los de matplotlib.
+
 **2.** Creamos una funcion para que cree el dataframe, lo limpie, lo ordene de menor a mayor,permita leerlo y lo devuelva.
-**3.** Creamos las siguientes funciones estadisticas:
- -Media: calcula la media con .mean()
- -Desviación típica:
- -Varianza:
- -Cuartiles
- -Percentiles 
+
+**3.** Creamos las siguientes funciones estadisticas para proceder al estudio del dataframe:
+       -Media: calcula la media con .mean()
+       -Desviación típica:
+       -Varianza:
+       -Mediana:
+       -Cuartiles
+       -Percentiles 
  
 
 
