@@ -82,7 +82,7 @@ def grafico_pastel(naranjas):
     wedges, texts, autotexts = ax.pie(porcentajes, labels=sectores, autopct='%1.1f%%', shadow=True, startangle=90)
     plt.title('Naranjas')
     plt.show()
-    plt.savefig('graficos/diagrama_sectores.png')
+    fig.savefig('graficos/diagrama_sectores.png')
 grafico_pastel(naranjas())
 
 
