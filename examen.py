@@ -69,7 +69,7 @@ def grafico_barras(naranjas):
     # guarda el archivo en una carpeta llamada graficos y ponle el nombre de diagrama_barras.png
     plt.savefig('graficos/diagrama_barras.png')
     
-    return plt.show()
+    plt.show()
 grafico_barras(naranjas())
 
 
@@ -77,15 +77,18 @@ grafico_barras(naranjas())
 
 
 def dispersión(naranjas):
-    sns.set(style="darkgrid")
-    sns.set(font_scale=1.5)
-    sns.distplot(naranjas['naranjas'])
+    naranjas = pd.read_csv('naranjas.csv')
+    data= naranjas['naranjas'].groupby(pd.cut(naranjas['naranjas'], range(100,240,10))).count()
+    fig, ax = plt.subplots()
+    lista=[]
+    for i in range(100,230,10):
+        lista.append(i)
+    plt.scatter(lista, data)
     plt.title('Naranjas')
-    plt.xlabel('Peso de la naranja en gramos')
-    plt.ylabel('Cantidad de naranjas')
-    plt.savefig('graficos/diagrama_dispersion.png')
-    return plt.show()
+    plt.show()
+    fig.savefig('graficos/diagrama_dispersion.png')
 dispersión(naranjas())
+
 
 
 
