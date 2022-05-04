@@ -56,7 +56,7 @@ print('Hay',menores(naranjas()),'naranjas que pesan menos 130')
 # haz una funcion de un grafico de barras que muestre el peso de las naranjas en el ejex y el numero de veces que se repite cada peso en el ejey
 def grafico_barras(naranjas):
     plt.figure(figsize=(10,5))
-    # separa los datos del eje x y pon los menores de 130 de color rojo y los mayores de 130 de color azul
+    
     sns.countplot(naranjas['naranjas'])
     # dira los datos del eje x 90 grados
     plt.xticks(rotation=90)
@@ -65,11 +65,27 @@ def grafico_barras(naranjas):
     # pon el nombre de los ejes
     plt.xlabel('Peso de la naranja en gramos')
     plt.ylabel('Cantidad de naranjas')
-    plt.show()
-    # guarda el archivo en una carpeta llamada graficos
+    
+    # guarda el archivo en una carpeta llamada graficos y ponle el nombre de diagrama_barras.png
     plt.savefig('graficos/diagrama_barras.png')
+    
+    return plt.show()
 grafico_barras(naranjas())
 
+
+
+
+
+def dispersión(naranjas):
+    sns.set(style="darkgrid")
+    sns.set(font_scale=1.5)
+    sns.distplot(naranjas['naranjas'])
+    plt.title('Naranjas')
+    plt.xlabel('Peso de la naranja en gramos')
+    plt.ylabel('Cantidad de naranjas')
+    plt.savefig('graficos/diagrama_dispersion.png')
+    return plt.show()
+dispersión(naranjas())
 
 
 
@@ -85,6 +101,9 @@ def grafico_pastel(naranjas):
     fig.savefig('graficos/diagrama_sectores.png')
 grafico_pastel(naranjas())
 
+
+
+    
 
     
 
