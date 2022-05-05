@@ -183,6 +183,22 @@ grafico_pastel(dataframe_naranjas())
    -Diagrama de dispersión: utilizamos la libreía Matplotlib.
    
    *plt.scatter(): se usa para crear diagramas de dispersión
+   
+   ## Explicación gráficas:
+   
+   **1.** Diagrama de barras:
+   
+   Un diagrama de barras sirve para podemos comparar los distintos pesos de las naranjas, es decir, para ver que peso se repite mas o para ver la cantidad de naranjas    que hay de un peso en    concreto.
+   
+   **2.** Diagrama de sectores:
+   
+   Un diagrama de sectores es un tipo de diagrama en forma de círculo que sirve para representar datos estadísticos, que quedan representados en forma de sectores:        Cada dato queda representado en un sector, el cual es proporcional a la frecuencia. Aquí podemos responder visualmente la pregunta de cuantas naranjas pesan menos      de 130 y ver el porcentaje de esto mismo
+   
+   **3.** Diagrama de dispersión
+   
+   El diagrama de dispersión se usa comúnmente para mostrar cómo dos variables se relacionan entre sí. De este modo, permite estudiar las relaciones que existen entre    dos factores, problemas o causas relacionadas con la calidad, o un problema de calidad y su posible causa.
+   
+   
 
   
       
