@@ -142,13 +142,14 @@ grafico_pastel(dataframe_naranjas())
 
 **3.** Creamos las siguientes funciones estadisticas para proceder al estudio del dataframe:
        
-       -Media: calcula la media con .mean()
-       -Desviación típica: calcula la desviación típica con
-       -Varianza: calcula la varianza con
-       -Mediana: calcula la mediana con
-       -Cuartiles: calcula los cuartiles 25 y 75 con
+       -Media: calcula la media con .mean() que es una función de numpy para calcular la media.
+       -Desviación típica: calcula la desviación típica con .std() que es una función de numpy para calcular la desviación típica.
+       -Varianza: calcula la varianza con .var() que es una función de numpy para calcular la varianza.
+       -Mediana: calcula la mediana con .median() que es una función de numpy para calcular la mediana.
+       -Moda: calcula la moda con .mode() que es una función de numpy para calcular la moda.
+       -Cuartiles: calcula los cuartiles 25 y 75 con .quantile() que es una función de numpy para calcular los cuartiles.
        
-**4.** Creamos la función menores para responder la pregunta de cuantas naranjaspesan menos de 130
+**4.** Creamos la función menores para responder la pregunta de cuantas naranjas pesan menos de 130
 
 **5** Creamos las siguientes gráficas:
       
