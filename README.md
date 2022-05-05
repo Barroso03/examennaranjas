@@ -62,11 +62,17 @@ def mediana(naranjas):
 print('La mediana del peso de las naranjas es:',mediana(dataframe_naranjas()))
 
 
+def moda(naranjas):
+    moda = naranjas['naranjas'].mode()
+    return moda
+print('La moda de las naranjas es:',moda(dataframe_naranjas()))
+
 
 def cuartiles(naranjas):
     cuartiles = naranjas['naranjas'].quantile([0.25, 0.75])
     return cuartiles
 print('Los cuartiles de las naranjas son:',cuartiles(dataframe_naranjas()))
+
 
 
 
@@ -107,7 +113,6 @@ dispersión(dataframe_naranjas())
 
 
 
-# haz una funcion de un grafico de pastel que muestre el peso de las naranjas en el ejex y el numero de veces que se repite cada peso en el ejey
 def grafico_pastel(naranjas):
     fig, ax = plt.subplots()
     sectores =["<130", "130", " >130"]
@@ -136,12 +141,16 @@ grafico_pastel(dataframe_naranjas())
 **2.** Creamos una funcion para que cree el dataframe, lo limpie, lo ordene de menor a mayor,permita leerlo y lo devuelva.
 
 **3.** Creamos las siguientes funciones estadisticas para proceder al estudio del dataframe:
+       
        -Media: calcula la media con .mean()
-       -Desviación típica:
-       -Varianza:
-       -Mediana:
-       -Cuartiles
-       -Percentiles 
- 
+       -Desviación típica: calcula la desviación típica con
+       -Varianza: calcula la varianza con
+       -Mediana: calcula la mediana con
+       -Cuartiles: calcula los cuartiles 25 y 75 con
+       
+**4.** Creamos la función menores para responder la pregunta de cuantas naranjaspesan menos de 130
+
+**5** Creamos las siguientes gráficas:
+      
 
 
