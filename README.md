@@ -1,4 +1,4 @@
-<h1 align="center">	Examen naramjas</h1>
+<h1 align="center">	Examen naranjas</h1>
 
 <h2>Repositorio:</h2>
 
